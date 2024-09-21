@@ -21,8 +21,11 @@ This project implements a **generalized and secure version** of the classic Rock
     git clone https://github.com/<your-username>/Generalized-Secure-RPS.git
     cd Generalized-Secure-RPS
     ```
-
-2. Run the game using Node.js:
+2. Run the following command to install the required package:
+   ```
+   npm install ascii-table
+   ```
+3. Run the game using Node.js:
     ```bash
     node game.js Rock Paper Scissors
     ```
@@ -35,31 +38,48 @@ This project implements a **generalized and secure version** of the classic Rock
 ## Usage
 - The game takes an **odd number of moves** as command-line arguments.
 - Use `0` to exit the game.
-- Use `h` to display a **help table** showing which moves win or lose.
+- Use `?` to display a **help table** showing which moves win or lose.
 - After the game, the **key** is revealed to verify the computer's move.
 
 ## Example:
 ```bash
 $ node game.js Rock Paper Scissors Lizard Spock
 HMAC: <hmac_value>
-Make your choice:
+Available moves:
 1 - Rock
 2 - Paper
 3 - Scissors
 4 - Lizard
 5 - Spock
 0 - Exit
-h - Help
-
+? - Help
+Enter your move: 2
 Your move: Paper
 Computer's move: Scissors
 Computer Wins
-Key: <key_value>
+HMAC Key: <key_value>
 ```
+
+## Help Table
+The following table shows the outcome of each possible move against one another:
+.--------------------------------------------------------------------------.
+|                                Help Table                                |
+|--------------------------------------------------------------------------|
+| v PC\User > | Rock | Paper | Scissors | Dragon | Spider | Lizard | Spock |
+|-------------|------|-------|----------|--------|--------|--------|-------|
+| Rock        | Draw | Lose  | Lose     | Lose   | Lose   | Lose   | Lose  |
+| Paper       | Lose | Draw  | Lose     | Lose   | Lose   | Lose   | Lose  |
+| Scissors    | Lose | Lose  | Draw     | Lose   | Lose   | Lose   | Lose  |
+| Dragon      | Lose | Lose  | Lose     | Draw   | Lose   | Lose   | Lose  |
+| Spider      | Lose | Lose  | Lose     | Lose   | Draw   | Lose   | Lose  |
+| Lizard      | Lose | Lose  | Lose     | Lose   | Lose   | Draw   | Lose  |
+| Spock       | Lose | Lose  | Lose     | Lose   | Lose   | Lose   | Draw  |
+'--------------------------------------------------------------------------'
 
 ## Dependencies
 - Node.js
 - Crypto module (built-in with Node.js)
+- ascii-table (for generating the help table)
 
 ## License
 This project is licensed under the MIT License.
