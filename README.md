@@ -60,21 +60,8 @@ Computer Wins
 HMAC Key: <key_value>
 ```
 
-## Help Table
-The following table shows the outcome of each possible move against one another:
-.--------------------------------------------------------------------------.
-|                                Help Table                                |
-|--------------------------------------------------------------------------|
-| v PC\User > | Rock | Paper | Scissors | Dragon | Spider | Lizard | Spock |
-|-------------|------|-------|----------|--------|--------|--------|-------|
-| Rock        | Draw | Lose  | Lose     | Lose   | Lose   | Lose   | Lose  |
-| Paper       | Lose | Draw  | Lose     | Lose   | Lose   | Lose   | Lose  |
-| Scissors    | Lose | Lose  | Draw     | Lose   | Lose   | Lose   | Lose  |
-| Dragon      | Lose | Lose  | Lose     | Draw   | Lose   | Lose   | Lose  |
-| Spider      | Lose | Lose  | Lose     | Lose   | Draw   | Lose   | Lose  |
-| Lizard      | Lose | Lose  | Lose     | Lose   | Lose   | Draw   | Lose  |
-| Spock       | Lose | Lose  | Lose     | Lose   | Lose   | Lose   | Draw  |
-'--------------------------------------------------------------------------'
+## Help Table Screenshot
+![Help Table Screenshot](./help_table.png)
 
 ## Dependencies
 - Node.js
